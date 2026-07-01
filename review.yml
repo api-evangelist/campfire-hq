@@ -1,0 +1,135 @@
+aid: campfire-hq
+name: Campfire
+review:
+  question: Does Campfire (the AI-native accounting / ERP company) expose a documented public REST API?
+  answer: true
+  date: '2026-07-01'
+  reviewer: API Evangelist
+  openapiSpecCreated: true
+disambiguation:
+  summary: |
+    "Campfire" is an overloaded name. This catalog entry (aid: campfire-hq) is
+    the AI-native ERP / accounting and general-ledger company founded in 2023 by
+    John Glasgow (formerly Bill.com / Invoice2go), backed by Accel and Ribbit.
+    It is NOT the 37signals "Campfire" group-chat product (the once-hosted
+    Basecamp chat app, later relaunched as a one-time-purchase self-hosted chat
+    server). It is also distinct from any other "Campfire" branded software.
+  thisEntity:
+    name: Campfire (AI-native ERP / accounting)
+    marketingSite: https://www.campfire.ai/
+    docs: https://docs.campfire.ai/
+    apiHost: https://api.meetcampfire.com
+    founded: '2023'
+    founderCeo: John Glasgow
+    products:
+    - General ledger and core accounting
+    - Revenue recognition
+    - Accounts payable / accounts receivable
+    - Financial statements and reporting
+    - Close management and bank reconciliation
+    aiAssistant: Ember (Campfire's in-product AI accounting assistant)
+  notThisEntity:
+  - name: 37signals Campfire
+    note: Group chat / messaging product from Basecamp/37signals. Unrelated to accounting.
+  - name: Basecamp Campfire
+    note: The chat feature inside Basecamp. Unrelated.
+  domainNote: |
+    The task named "campfire.com" for the company. The verified, live properties
+    for the accounting company are campfire.ai (marketing/docs) and
+    meetcampfire.com (the api.meetcampfire.com API host and the LinkedIn slug
+    /company/meetcampfire). This entry uses the verified campfire.ai / docs.campfire.ai
+    / api.meetcampfire.com URLs rather than campfire.com.
+  aiAssistantNameNote: |
+    The task referred to an AI accountant named "Aiden." Campfire's publicly
+    documented in-product AI assistant is named "Ember" (also referenced in some
+    coverage as "Ember AI"). No product named "Aiden" was found on Campfire's
+    site or docs as of the review date; "Ember" is used in this entry. If "Aiden"
+    is a newer or internal name, reconcile on a later pass.
+findings:
+  summary: |
+    Campfire publishes a genuine, documented public REST developer API at
+    https://api.meetcampfire.com with human docs at https://docs.campfire.ai/.
+    A machine-readable OpenAPI 3.0.3 document ("Campfire Developer APIs",
+    version 1.0.0) is served at https://api.meetcampfire.com/api/schema?format=json
+    and describes 186 documented paths across the accounting/ERP surface. The API
+    is REST/JSON over HTTPS and uses token-based (Knox) API-key authentication via
+    the Authorization header with a required "Token" prefix. Campfire also
+    documents an AI integration via Model Context Protocol (MCP).
+  apiState: Public, documented REST API with a published OpenAPI 3.0.3 schema.
+  surfacesDocumented:
+  - Core Accounting (journal entries, intercompany JEs, chart transactions, budgets, fixed assets, transaction matching)
+  - Chart of Accounts & Company Objects (accounts, departments, vendors, custom fields/dimensions, cost allocations)
+  - Financial Statements (balance sheet, income statement, cash flow, trial balance, general ledger report)
+  - Accounts Payable (bills, bill drafts, debit memos, bill payments, Ramp sync)
+  - Accounts Receivable (invoices, credit memos, invoice payments, statement/credit-memo PDFs)
+  - Revenue Recognition (contracts, products, bundles, subscriptions, milestones, usage, prepaid commits, revenue transactions)
+  - Cash Management (bank accounts, bank transactions, bank feed)
+  - Bank Reconciliation (reconciliation reports, GL transaction matching, bank statement parsing)
+  - Settings (entities, currencies/exchange rates, files/attachments)
+  - Integrations & Webhooks (webhook CRUD, webhook events)
+  surfacesModeledNotSeparatelyDocumented:
+  - note: |
+      All ten APIs in this entry map to tag groups that appear verbatim in the
+      upstream OpenAPI. No surface here was invented; the split into ten APIs is
+      an API-Evangelist editorial grouping of the upstream tags for catalog
+      readability.
+  transports:
+  - protocol: REST
+    scheme: https
+    baseURL: https://api.meetcampfire.com
+    documented: true
+  authentication:
+    scheme: knoxApiToken
+    location: header
+    header: Authorization
+    format: 'Token <api-token>'
+    type: apiKey
+  openapi:
+    published: true
+    version: '3.0.3'
+    title: Campfire Developer APIs
+    schemaUrl: https://api.meetcampfire.com/api/schema?format=json
+    documentedPaths: 186
+  githubOrganization:
+    found: false
+    note: |
+      No public GitHub organization for the Campfire accounting company could be
+      verified (the github.com/campfire login is not this company; no
+      meetcampfire org exists). GitHubOrganization is therefore omitted from
+      apis.yml per API Evangelist honesty rules rather than guessed.
+  integrationsObserved:
+  - Stripe (revenue automation from Stripe data)
+  - Ramp (bill sync)
+  - Brex
+  - Rippling
+  - HubSpot
+  - Salesforce
+  - Apideck (third-party unified accounting connector to Campfire)
+sources:
+- url: https://www.campfire.ai/
+  type: Website
+  note: Marketing site for the AI-native ERP.
+- url: https://docs.campfire.ai/
+  type: Documentation
+  note: Developer docs; quickstart, API reference, MCP guide.
+- url: https://docs.campfire.ai/llms.txt
+  type: Documentation
+  note: LLM index enumerating the full API reference by section.
+- url: https://api.meetcampfire.com/api/schema?format=json
+  type: APIReference
+  note: Live OpenAPI 3.0.3 schema, 186 paths, knoxApiToken security scheme.
+- url: https://www.linkedin.com/company/meetcampfire
+  type: LinkedIn
+  note: Company LinkedIn page.
+- url: https://www.ycombinator.com/companies/campfire-2
+  type: Website
+  note: Y Combinator profile confirming AI-native ERP positioning and founder.
+actions:
+  openapiPath: openapi/campfire-hq-openapi.yml
+  openapiNote: |
+    A curated OpenAPI 3.0.3 document was authored at openapi/campfire-hq-openapi.yml
+    as a representative subset (43 operations across 28 paths) drawn directly from
+    the upstream schema, preserving real paths, methods, operationIds, tags, and
+    the knoxApiToken security scheme. Request/response bodies are simplified to
+    generic objects; info.x-upstream-openapi links the full 186-path source.
+  apisYmlUpdated: true

@@ -1,0 +1,57 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Campfire
+providerId: campfire-hq
+created: '2026-07-01'
+modified: '2026-07-01'
+reconciled: false
+tags:
+- Accounting
+- ERP
+- General Ledger
+- FinTech
+- Rate Limiting
+- Quotas
+- Throttling
+description: >-
+  Campfire's developer API is a token-authenticated (Knox) REST API scoped to a
+  customer's own tenant. Public documentation does not publish specific numeric
+  rate-limit values (RPM/RPD/burst) as of the created date. Standard REST fair-use
+  throttling should be assumed, with 429 responses on overage; several list
+  endpoints are paginated, which implicitly bounds per-request payload size.
+  Specific limits are not reconciled in this artifact.
+notes: >-
+  Confirm exact per-endpoint and per-tenant rate limits, pagination page sizes,
+  and any bulk-endpoint caps with Campfire support / docs during reconciliation.
+  Bulk endpoints (e.g. bulk create invoices, bulk match GL transactions) exist
+  and may carry their own batch-size limits.
+sources:
+- https://docs.campfire.ai/
+- https://api.meetcampfire.com/api/schema?format=json
+responseCodes:
+  throttled: 429
+limits:
+- name: Request Rate
+  scope: tenant
+  metric: requests
+  limit: see provider documentation
+  notes: No public numeric RPM/RPD published; assume REST fair-use limits per API token.
+- name: Pagination
+  scope: endpoint
+  metric: records
+  limit: see provider documentation
+  notes: List endpoints are paginated; page size bounds records returned per request.
+- name: Bulk Operations
+  scope: endpoint
+  metric: records
+  limit: see provider documentation
+  notes: Bulk endpoints (bulk create/search/match) may enforce a maximum batch size per call.
+policies:
+- name: Token Scope
+  description: Limits and access are enforced per Knox API token, scoped to the issuing Campfire tenant.
+- name: Backoff Strategy
+  description: Clients should implement exponential backoff with jitter and honor Retry-After on 429 responses.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

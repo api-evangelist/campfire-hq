@@ -1,0 +1,93 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Campfire
+providerId: campfire-hq
+created: '2026-07-01'
+modified: '2026-07-01'
+reconciled: false
+tags:
+- Accounting
+- ERP
+- General Ledger
+- Revenue Recognition
+- FinTech
+- Plans
+description: >-
+  Campfire is a sales-quoted B2B ERP / accounting platform. It does not publish
+  a public, self-serve price list for the product or its developer API; pricing
+  is quoted based on company size, entities, modules (core accounting, revenue
+  recognition, AP/AR, close), and volume. Access to the developer API and
+  webhooks is part of the platform subscription rather than a separately metered,
+  pay-as-you-go API product. Entries below are therefore modeled as
+  contact-sales plans, not published rates.
+notes: >-
+  No public pricing page was found for Campfire as of the created date. Verify
+  current packaging and any usage-based components directly with Campfire sales
+  during reconciliation.
+sources:
+- https://www.campfire.ai/
+- https://docs.campfire.ai/
+- https://www.ycombinator.com/companies/campfire-2
+plans:
+- id: campfire-hq-platform
+  name: Campfire Platform (Contact Sales)
+  type: enterprise
+  description: >-
+    Subscription to the Campfire AI-native ERP, quoted by sales. Includes the
+    general ledger and core accounting, revenue recognition, AP/AR, financial
+    reporting, close management, and the Ember AI assistant, along with developer
+    API and webhook access for custom integrations.
+  entries:
+  - label: Platform Subscription
+    name: platform_subscription
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: Core Accounting / General Ledger
+  - name: Revenue Recognition
+  - name: Accounts Payable
+  - name: Accounts Receivable
+  - name: Financial Statements & Reporting
+  - name: Bank Reconciliation & Close
+  - name: Ember AI Assistant
+  - name: Developer API & Webhooks
+  - name: MCP (AI) Integration
+- id: campfire-hq-developer-api
+  name: Developer API Access
+  type: included
+  description: >-
+    Programmatic REST API and webhook access to the customer's own Campfire
+    tenant. Bundled with the platform subscription; no separately published
+    per-call price. Rate limits (see rate-limits artifact) govern fair use.
+  entries:
+  - label: REST API & Webhooks
+    name: developer_api
+    type: included
+    metric: requests
+    limit: -1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: included with platform subscription
+    userMultiplied: false
+  elements:
+  - name: Core Accounting API
+  - name: Chart of Accounts & Company Objects API
+  - name: Financial Statements API
+  - name: Accounts Payable API
+  - name: Accounts Receivable API
+  - name: Revenue Recognition API
+  - name: Cash Management API
+  - name: Bank Reconciliation API
+  - name: Settings API
+  - name: Integrations & Webhooks API
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

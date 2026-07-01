@@ -1,0 +1,254 @@
+aid: campfire-hq
+url: https://raw.githubusercontent.com/api-evangelist/campfire-hq/refs/heads/main/apis.yml
+name: Campfire
+kind: company
+description: Campfire is an AI-native ERP and accounting platform for high-growth startups
+  and mid-market companies, unifying the general ledger, revenue recognition, accounts
+  payable/receivable, reporting, and close management. Its "Ember" AI assistant automates
+  transaction categorization, bank reconciliation, and revenue recognition. Campfire ships
+  a documented REST developer API (api.meetcampfire.com) for custom accounting integrations
+  and webhook-driven sync with tools like Stripe, Ramp, and Brex.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Accounting
+- ERP
+- General Ledger
+- Revenue Recognition
+- FinTech
+- AI
+created: '2026-07-01'
+modified: '2026-07-01'
+specificationVersion: '0.19'
+apis:
+- aid: campfire-hq:campfire-hq-core-accounting-api
+  name: Campfire Core Accounting API
+  tags:
+  - General Ledger
+  - Journal Entries
+  - Transactions
+  - Budgets
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.campfire.ai/
+  baseURL: https://api.meetcampfire.com
+  properties:
+  - url: https://docs.campfire.ai/
+    type: Documentation
+  - url: https://api.meetcampfire.com/api/schema?format=json
+    type: APIReference
+  - url: openapi/campfire-hq-openapi.yml
+    type: OpenAPI
+  - url: collections/campfire-hq.postman_collection.json
+    type: PostmanCollection
+  - url: collections/campfire-hq.opencollection.json
+    type: OpenCollection
+  description: Create and manage journal entries (including intercompany entries), chart
+    transactions, budgets, fixed assets, and transaction matching against the general
+    ledger. The heart of Campfire's double-entry accounting engine.
+- aid: campfire-hq:campfire-hq-chart-of-accounts-api
+  name: Campfire Chart of Accounts & Company Objects API
+  tags:
+  - Chart of Accounts
+  - Departments
+  - Vendors
+  - Custom Dimensions
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.campfire.ai/
+  baseURL: https://api.meetcampfire.com
+  properties:
+  - url: https://docs.campfire.ai/
+    type: Documentation
+  - url: openapi/campfire-hq-openapi.yml
+    type: OpenAPI
+  - url: collections/campfire-hq.postman_collection.json
+    type: PostmanCollection
+  - url: collections/campfire-hq.opencollection.json
+    type: OpenCollection
+  description: Manage the chart of accounts and supporting company objects - departments,
+    vendors, custom fields, custom dimensions and dimension groups, cost allocations,
+    and fixed asset classes - that structure how transactions are coded.
+- aid: campfire-hq:campfire-hq-financial-statements-api
+  name: Campfire Financial Statements API
+  tags:
+  - Reporting
+  - Balance Sheet
+  - Income Statement
+  - Trial Balance
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.campfire.ai/
+  baseURL: https://api.meetcampfire.com
+  properties:
+  - url: https://docs.campfire.ai/
+    type: Documentation
+  - url: openapi/campfire-hq-openapi.yml
+    type: OpenAPI
+  - url: collections/campfire-hq.postman_collection.json
+    type: PostmanCollection
+  - url: collections/campfire-hq.opencollection.json
+    type: OpenCollection
+  description: Programmatically pull financial statements and reports - balance sheet
+    (and comparative), income statement (and comparative), cash flow, cash-basis
+    statements, trial balance, and the general ledger report.
+- aid: campfire-hq:campfire-hq-accounts-payable-api
+  name: Campfire Accounts Payable API
+  tags:
+  - Accounts Payable
+  - Bills
+  - Debit Memos
+  - Payments
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.campfire.ai/
+  baseURL: https://api.meetcampfire.com
+  properties:
+  - url: https://docs.campfire.ai/
+    type: Documentation
+  - url: openapi/campfire-hq-openapi.yml
+    type: OpenAPI
+  - url: collections/campfire-hq.postman_collection.json
+    type: PostmanCollection
+  - url: collections/campfire-hq.opencollection.json
+    type: OpenCollection
+  description: Create, modify, pay, and void bills and bill drafts; manage debit memos,
+    bill payments, and amortization schedules; and sync bills to Ramp.
+- aid: campfire-hq:campfire-hq-accounts-receivable-api
+  name: Campfire Accounts Receivable API
+  tags:
+  - Accounts Receivable
+  - Invoices
+  - Credit Memos
+  - Payments
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.campfire.ai/
+  baseURL: https://api.meetcampfire.com
+  properties:
+  - url: https://docs.campfire.ai/
+    type: Documentation
+  - url: openapi/campfire-hq-openapi.yml
+    type: OpenAPI
+  - url: collections/campfire-hq.postman_collection.json
+    type: PostmanCollection
+  - url: collections/campfire-hq.opencollection.json
+    type: OpenCollection
+  description: Create, send, pay, and void invoices and credit memos; apply invoice
+    payments in bulk; and generate client invoice statement and credit memo PDFs.
+- aid: campfire-hq:campfire-hq-revenue-recognition-api
+  name: Campfire Revenue Recognition API
+  tags:
+  - Revenue Recognition
+  - Contracts
+  - Subscriptions
+  - Usage Billing
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.campfire.ai/
+  baseURL: https://api.meetcampfire.com
+  properties:
+  - url: https://docs.campfire.ai/
+    type: Documentation
+  - url: openapi/campfire-hq-openapi.yml
+    type: OpenAPI
+  - url: collections/campfire-hq.postman_collection.json
+    type: PostmanCollection
+  - url: collections/campfire-hq.opencollection.json
+    type: OpenCollection
+  description: Manage revenue contracts, products and product bundles, subscriptions,
+    milestones, usage-based revenue, prepaid commits, and revenue transactions -
+    including a Parse Contract endpoint for AI-assisted contract ingestion.
+- aid: campfire-hq:campfire-hq-cash-management-api
+  name: Campfire Cash Management API
+  tags:
+  - Cash Management
+  - Bank Accounts
+  - Bank Transactions
+  - Bank Feed
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.campfire.ai/
+  baseURL: https://api.meetcampfire.com
+  properties:
+  - url: https://docs.campfire.ai/api-reference/cash-management/list-bank-accounts
+    type: Documentation
+  - url: openapi/campfire-hq-openapi.yml
+    type: OpenAPI
+  - url: collections/campfire-hq.postman_collection.json
+    type: PostmanCollection
+  - url: collections/campfire-hq.opencollection.json
+    type: OpenCollection
+  description: Manage bank accounts and bank transactions, and post bank feed data
+    for downstream categorization and reconciliation.
+- aid: campfire-hq:campfire-hq-bank-reconciliation-api
+  name: Campfire Bank Reconciliation API
+  tags:
+  - Bank Reconciliation
+  - Matching
+  - Close
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.campfire.ai/
+  baseURL: https://api.meetcampfire.com
+  properties:
+  - url: https://docs.campfire.ai/
+    type: Documentation
+  - url: openapi/campfire-hq-openapi.yml
+    type: OpenAPI
+  - url: collections/campfire-hq.postman_collection.json
+    type: PostmanCollection
+  - url: collections/campfire-hq.opencollection.json
+    type: OpenCollection
+  description: Create and manage bank reconciliation reports, list and bulk-match GL
+    transactions, parse bank statement pages, and confirm transaction selections to
+    accelerate the monthly close.
+- aid: campfire-hq:campfire-hq-settings-api
+  name: Campfire Settings API
+  tags:
+  - Settings
+  - Entities
+  - Currencies
+  - Files
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.campfire.ai/
+  baseURL: https://api.meetcampfire.com
+  properties:
+  - url: https://docs.campfire.ai/
+    type: Documentation
+  - url: openapi/campfire-hq-openapi.yml
+    type: OpenAPI
+  - url: collections/campfire-hq.postman_collection.json
+    type: PostmanCollection
+  - url: collections/campfire-hq.opencollection.json
+    type: OpenCollection
+  description: Configure legal entities for multi-entity consolidation, manage customer
+    currencies and exchange rates, and upload and manage files and attachments.
+- aid: campfire-hq:campfire-hq-integrations-webhooks-api
+  name: Campfire Integrations & Webhooks API
+  tags:
+  - Integrations
+  - Webhooks
+  - Event Sync
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://docs.campfire.ai/
+  baseURL: https://api.meetcampfire.com
+  properties:
+  - url: https://docs.campfire.ai/
+    type: Documentation
+  - url: openapi/campfire-hq-openapi.yml
+    type: OpenAPI
+  - url: collections/campfire-hq.postman_collection.json
+    type: PostmanCollection
+  - url: collections/campfire-hq.opencollection.json
+    type: OpenCollection
+  description: Register and manage webhooks for event-driven sync, and list available
+    webhook events, so external systems (Stripe, Ramp, Brex, ERPs) stay in step with
+    Campfire's ledger.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/meetcampfire
+- type: Website
+  url: https://www.campfire.ai/
+- type: Documentation
+  url: https://docs.campfire.ai/
+- type: Plans
+  url: plans/campfire-hq-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/campfire-hq-rate-limits.yml
+- type: FinOps
+  url: finops/campfire-hq-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

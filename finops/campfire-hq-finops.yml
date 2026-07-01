@@ -1,0 +1,97 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Campfire
+providerId: campfire-hq
+created: '2026-07-01'
+modified: '2026-07-01'
+reconciled: false
+tags:
+- Accounting
+- ERP
+- General Ledger
+- FinTech
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Campfire spend. Campfire is a sales-quoted ERP / accounting
+  subscription rather than a usage-metered API product; the developer API and
+  webhooks are included with the platform subscription. Cost is therefore
+  primarily a committed subscription (by company size, entities, and modules)
+  rather than per-call metering. This artifact models the subscription-based
+  charge shape; there is no public per-request price to meter.
+notes: >-
+  Because Campfire pricing is quoted, treat spend as a fixed/committed
+  subscription line rather than variable API usage. Revisit if Campfire later
+  publishes usage-based API pricing.
+sources:
+- https://www.campfire.ai/
+- https://docs.campfire.ai/
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Campfire
+serviceCategory: Business Applications
+billingModel:
+  pricingCategory: Committed
+  billingFrequency: Annual
+  billingCurrency: USD
+  chargeCategories:
+  - Purchase
+  - Usage
+  - Adjustment
+focusColumns:
+  ServiceName: Campfire
+  ServiceCategory: Business Applications
+  ProviderName: Campfire
+  PublisherName: Campfire
+  InvoiceIssuerName: Campfire
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Committed
+meters:
+- name: platform_subscription
+  description: Committed platform subscription (quoted by company size, entities, and modules).
+  unit: contract
+  aggregation: sum
+  dimensions:
+  - account
+  - entity
+  - module
+- name: api_requests
+  description: >-
+    Developer API requests against the tenant. Included with the subscription and
+    not separately priced today; tracked here for visibility and rate-limit
+    accountability rather than billing.
+  unit: requests
+  aggregation: sum
+  dimensions:
+  - account
+  - api
+  - api_token
+- name: webhook_deliveries
+  description: >-
+    Webhook events delivered for event-driven sync. Included with the platform;
+    tracked for operational visibility.
+  unit: events
+  aggregation: sum
+  dimensions:
+  - account
+  - webhook
+principles:
+- name: Visibility
+  description: Track platform subscription line plus API/webhook volume per tenant and per API token, even though usage is bundled.
+- name: Allocation
+  description: Tag API tokens by workload/team/integration and map subscription cost to the finance and engineering cost centers that consume it.
+- name: Optimization
+  description: Consolidate integrations onto the native API and webhooks (vs. third-party unified connectors) to reduce duplicate tooling spend; scope modules to what is used.
+- name: Accountability
+  description: Review the annual subscription against realized value and module usage at renewal; assign an owner for API-token lifecycle.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

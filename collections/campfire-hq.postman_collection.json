@@ -1,0 +1,1878 @@
+{
+  "info": {
+    "_postman_id": "50013ec1-03f5-42a1-8652-57faaf663bed",
+    "name": "Campfire Developer APIs",
+    "description": "Curated Postman collection for the Campfire AI-native ERP developer API (representative subset modeled from https://api.meetcampfire.com/api/schema). Auth is a Knox API token sent as 'Authorization: Token <token>'.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "id": "d1bb0728-6486-4d9d-ae1c-dc5eb37be69f",
+      "name": "Accounts Payable",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "List Bill Drafts",
+          "request": {
+            "name": "List Bill Drafts",
+            "description": {
+              "content": "List Bill Drafts",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/v1/bill-draft",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "v1",
+                "bill-draft"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Bill Draft",
+          "request": {
+            "name": "Create Bill Draft",
+            "description": {
+              "content": "Create Bill Draft",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/v1/bill-draft",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "v1",
+                "bill-draft"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Accounting Bills",
+          "request": {
+            "name": "List Accounting Bills",
+            "description": {
+              "content": "List Accounting Bills",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/v1/bill/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "v1",
+                "bill"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Accounting Bill",
+          "request": {
+            "name": "Create Accounting Bill",
+            "description": {
+              "content": "Create Accounting Bill",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/v1/bill/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "v1",
+                "bill"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "a8bd46b7-f8a0-4d3f-9a37-5506d7467788",
+      "name": "Accounts Receivable",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "List Credit Memos",
+          "request": {
+            "name": "List Credit Memos",
+            "description": {
+              "content": "List Credit Memos",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/v1/credit-memo",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "v1",
+                "credit-memo"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Credit Memo",
+          "request": {
+            "name": "Create Credit Memo",
+            "description": {
+              "content": "Create Credit Memo",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/v1/credit-memo",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "v1",
+                "credit-memo"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Invoices",
+          "request": {
+            "name": "List Invoices",
+            "description": {
+              "content": "List Invoices",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/v1/invoice/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "v1",
+                "invoice"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Invoice",
+          "request": {
+            "name": "Create Invoice",
+            "description": {
+              "content": "Create Invoice",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/v1/invoice/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "v1",
+                "invoice"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "5e2f620b-2c8a-4b85-84bf-d19343710afb",
+      "name": "Bank Reconciliation",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "List Bank Reconciliation Reports",
+          "request": {
+            "name": "List Bank Reconciliation Reports",
+            "description": {
+              "content": "List Bank Reconciliation Reports",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/v2/reconciliation",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "v2",
+                "reconciliation"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Bank Reconciliation Report",
+          "request": {
+            "name": "Create Bank Reconciliation Report",
+            "description": {
+              "content": "Create Bank Reconciliation Report",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/v2/reconciliation",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "v2",
+                "reconciliation"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "0f903ff3-04fd-4a5f-ba73-aaa9479113f9",
+      "name": "Cash Management",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "List Bank Accounts",
+          "request": {
+            "name": "List Bank Accounts",
+            "description": {
+              "content": "List Bank Accounts",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/account",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "account"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Bank Account",
+          "request": {
+            "name": "Create Bank Account",
+            "description": {
+              "content": "Create Bank Account",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/account",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "account"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Bank Transactions",
+          "request": {
+            "name": "List Bank Transactions",
+            "description": {
+              "content": "List Bank Transactions",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/transaction",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "transaction"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Bank Transaction",
+          "request": {
+            "name": "Create Bank Transaction",
+            "description": {
+              "content": "Create Bank Transaction",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/transaction",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "transaction"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "eb8fe376-9084-4ed9-ac8d-29b115da74d4",
+      "name": "Company Objects",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "List Custom Dimensions",
+          "request": {
+            "name": "List Custom Dimensions",
+            "description": {
+              "content": "List Custom Dimensions",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/tag",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "tag"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Custom Dimension",
+          "request": {
+            "name": "Create Custom Dimension",
+            "description": {
+              "content": "Create Custom Dimension",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/tag",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "tag"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Vendors",
+          "request": {
+            "name": "List Vendors",
+            "description": {
+              "content": "List Vendors",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/vendor",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "vendor"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Vendor",
+          "request": {
+            "name": "Create Vendor",
+            "description": {
+              "content": "Create Vendor",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/vendor",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "vendor"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "8fa0ddd1-a3c5-49d1-bdb8-b9d3542dfead",
+      "name": "Core Accounting",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "List Budgets",
+          "request": {
+            "name": "List Budgets",
+            "description": {
+              "content": "List Budgets",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/budgets",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "budgets"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Budget",
+          "request": {
+            "name": "Create Budget",
+            "description": {
+              "content": "Create Budget",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/budgets",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "budgets"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Retrieve Budget",
+          "request": {
+            "name": "Retrieve Budget",
+            "description": {
+              "content": "Retrieve Budget",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/budgets/{id}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "budgets",
+                "{id}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "List Fixed Assets",
+          "request": {
+            "name": "List Fixed Assets",
+            "description": {
+              "content": "List Fixed Assets",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/fixed-asset",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "fixed-asset"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Fixed Asset",
+          "request": {
+            "name": "Create Fixed Asset",
+            "description": {
+              "content": "Create Fixed Asset",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/fixed-asset",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "fixed-asset"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Chart Transactions",
+          "request": {
+            "name": "List Chart Transactions",
+            "description": {
+              "content": "List Chart Transactions",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/transaction",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "transaction"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "685ccbac-69b5-4aea-932d-a47f77845e59",
+      "name": "Custom Fields",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "Reorder Custom Fields",
+          "request": {
+            "name": "Reorder Custom Fields",
+            "description": {
+              "content": "Reorder Custom Fields",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/v1/custom-fields/reorder",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "v1",
+                "custom-fields",
+                "reorder"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "bd3685d9-06ec-4d19-a3cd-dfb2a65a71aa",
+      "name": "Financial Statements",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "Get Cash Basis Income Statement",
+          "request": {
+            "name": "Get Cash Basis Income Statement",
+            "description": {
+              "content": "Get Cash Basis Income Statement",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/cash-basis",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "cash-basis"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Get Balance Sheet",
+          "request": {
+            "name": "Get Balance Sheet",
+            "description": {
+              "content": "Get Balance Sheet",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/get_balance_sheet",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "get_balance_sheet"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Get Cash Flow",
+          "request": {
+            "name": "Get Cash Flow",
+            "description": {
+              "content": "Get Cash Flow",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/get_cash_flow",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "get_cash_flow"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Get Income Statement",
+          "request": {
+            "name": "Get Income Statement",
+            "description": {
+              "content": "Get Income Statement",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/get_income_statement",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "get_income_statement"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Get Trial Balance",
+          "request": {
+            "name": "Get Trial Balance",
+            "description": {
+              "content": "Get Trial Balance",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/get_trial_balance",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "get_trial_balance"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Get General Ledger",
+          "request": {
+            "name": "Get General Ledger",
+            "description": {
+              "content": "Get General Ledger",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/general-ledger",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "general-ledger"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "5e9b3fd2-a694-47c3-b408-5077f6483f25",
+      "name": "Integrations",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "List Webhooks",
+          "request": {
+            "name": "List Webhooks",
+            "description": {
+              "content": "List Webhooks",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/integrations/api/v1/webhook",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "integrations",
+                "api",
+                "v1",
+                "webhook"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Webhook",
+          "request": {
+            "name": "Create Webhook",
+            "description": {
+              "content": "Create Webhook",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/integrations/api/v1/webhook",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "integrations",
+                "api",
+                "v1",
+                "webhook"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Retrieve Webhook",
+          "request": {
+            "name": "Retrieve Webhook",
+            "description": {
+              "content": "Retrieve Webhook",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/integrations/api/v1/webhook/{id}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "integrations",
+                "api",
+                "v1",
+                "webhook",
+                "{id}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "9f91eb5b-9f1a-4782-b7fa-b40508e80076",
+      "name": "Revenue Recognition",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "List Contracts",
+          "request": {
+            "name": "List Contracts",
+            "description": {
+              "content": "List Contracts",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/rr/api/v1/contracts",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "rr",
+                "api",
+                "v1",
+                "contracts"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Contract",
+          "request": {
+            "name": "Create Contract",
+            "description": {
+              "content": "Create Contract",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/rr/api/v1/contracts",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "rr",
+                "api",
+                "v1",
+                "contracts"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Contract Customers",
+          "request": {
+            "name": "List Contract Customers",
+            "description": {
+              "content": "List Contract Customers",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/rr/api/v1/customers",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "rr",
+                "api",
+                "v1",
+                "customers"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "List Contract Products",
+          "request": {
+            "name": "List Contract Products",
+            "description": {
+              "content": "List Contract Products",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/rr/api/v1/product",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "rr",
+                "api",
+                "v1",
+                "product"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Contract Product",
+          "request": {
+            "name": "Create Contract Product",
+            "description": {
+              "content": "Create Contract Product",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/rr/api/v1/product",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "rr",
+                "api",
+                "v1",
+                "product"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "bde6603f-99bf-45bf-bdb2-e2f09ccd186a",
+      "name": "Settings",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "List Files",
+          "request": {
+            "name": "List Files",
+            "description": {
+              "content": "List Files",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ca/api/file",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ca",
+                "api",
+                "file"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "List Chart Entities",
+          "request": {
+            "name": "List Chart Entities",
+            "description": {
+              "content": "List Chart Entities",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/entity",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "entity"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": []
+        },
+        {
+          "name": "Create Chart Entity",
+          "request": {
+            "name": "Create Chart Entity",
+            "description": {
+              "content": "Create Chart Entity",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/entity",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "entity"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "id": "3e48aae0-c59d-4627-98d4-4298b04fb746",
+      "name": "coa",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "name": "Upload Entity Invoice Email Attachment",
+          "request": {
+            "name": "Upload Entity Invoice Email Attachment",
+            "description": {
+              "content": "Upload Entity Invoice Email Attachment",
+              "type": "text/plain"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/coa/api/entity/{entity_id}/attachment",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "coa",
+                "api",
+                "entity",
+                "{entity_id}",
+                "attachment"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "Token {{apiToken}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://api.meetcampfire.com",
+      "type": "string"
+    },
+    {
+      "key": "apiToken",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

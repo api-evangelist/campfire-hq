@@ -1,0 +1,17 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/campfire-hq-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: knoxApiToken
+  type: apiKey
+  in: header
+  parameter: Authorization
+  description: 'Token-based (Knox) authentication. Send the header as: Authorization: Token
+    <your-api-token>.'
+  sources:
+  - openapi/campfire-hq-openapi.yml

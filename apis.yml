@@ -237,6 +237,10 @@ apis:
     webhook events, so external systems (Stripe, Ramp, Brex, ERPs) stay in step with
     Campfire's ledger.
 common:
+- type: DomainSecurity
+  url: security/campfire-hq-domain-security.yml
+- type: Authentication
+  url: authentication/campfire-hq-authentication.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/meetcampfire
 - type: Website
@@ -249,6 +253,8 @@ common:
   url: rate-limits/campfire-hq-rate-limits.yml
 - type: FinOps
   url: finops/campfire-hq-finops.yml
+- type: Blog
+  url: https://campfire.ai/rss.xml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

@@ -1,0 +1,13 @@
+{
+  "repo": "campfire-hq",
+  "feeds": [
+    {
+      "source": "https://campfire.ai/blog",
+      "feed_url": "https://campfire.ai/rss.xml",
+      "title": "Campfire Blog",
+      "saved": 27
+    }
+  ],
+  "fetched": "2026-07-11T11:43:46Z",
+  "post_count": 52
+}

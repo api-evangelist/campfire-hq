@@ -237,6 +237,8 @@ apis:
     webhook events, so external systems (Stripe, Ramp, Brex, ERPs) stay in step with
     Campfire's ledger.
 common:
+- type: AgenticAccess
+  url: agentic-access/campfire-hq-agentic-access.yml
 - type: DomainSecurity
   url: security/campfire-hq-domain-security.yml
 - type: Authentication

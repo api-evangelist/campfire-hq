@@ -1,0 +1,120 @@
+openapi: 3.0.3
+info:
+  title: Campfire Developer APIs Accounts Payable Core Accounting API
+  description: 'Campfire''s developer APIs offer granular, programmatic access to Campfire''s AI-native ERP: core accounting and the general ledger, chart of accounts and company objects, accounts payable and receivable, bank reconciliation, cash management, financial statements, revenue recognition, settings, and integrations/webhooks. This document is a representative, API-Evangelist-curated subset modeled directly from Campfire''s published OpenAPI at https://api.meetcampfire.com/api/schema (186 documented paths). Request and response schemas are simplified to generic objects here; consult the upstream schema for full field-level detail.'
+  version: 1.0.0
+  contact:
+    name: Campfire
+    url: https://docs.campfire.ai/
+  x-modeled-by: API Evangelist (Kin Lane) - curated subset of the upstream Campfire OpenAPI
+  x-upstream-openapi: https://api.meetcampfire.com/api/schema?format=json
+servers:
+- url: https://api.meetcampfire.com
+  description: Production server
+security:
+- knoxApiToken: []
+tags:
+- name: Core Accounting
+paths:
+  /coa/api/budgets:
+    get:
+      operationId: coa_api_budgets_list
+      tags:
+      - Core Accounting
+      summary: List Budgets
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      operationId: coa_api_budgets_create
+      tags:
+      - Core Accounting
+      summary: Create Budget
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  /coa/api/budgets/{id}:
+    get:
+      operationId: coa_api_budgets_retrieve
+      tags:
+      - Core Accounting
+      summary: Retrieve Budget
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+        description: id
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  /coa/api/fixed-asset:
+    get:
+      operationId: coa_api_fixed_asset_list
+      tags:
+      - Core Accounting
+      summary: List Fixed Assets
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      operationId: coa_api_fixed_asset_create
+      tags:
+      - Core Accounting
+      summary: Create Fixed Asset
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  /coa/api/transaction:
+    get:
+      operationId: coa_api_transaction_retrieve
+      tags:
+      - Core Accounting
+      summary: List Chart Transactions
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  securitySchemes:
+    knoxApiToken:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: 'Token-based (Knox) authentication. Send the header as: Authorization: Token <your-api-token>.'

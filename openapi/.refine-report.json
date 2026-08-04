@@ -1,0 +1,36 @@
+{
+  "provider": "campfire-hq",
+  "sources": [
+    "campfire-hq-accounts-payable-api-openapi.yml",
+    "campfire-hq-accounts-receivable-api-openapi.yml",
+    "campfire-hq-bank-reconciliation-api-openapi.yml",
+    "campfire-hq-cash-management-api-openapi.yml",
+    "campfire-hq-coa-api-openapi.yml",
+    "campfire-hq-company-objects-api-openapi.yml",
+    "campfire-hq-core-accounting-api-openapi.yml",
+    "campfire-hq-custom-fields-api-openapi.yml",
+    "campfire-hq-financial-statements-api-openapi.yml",
+    "campfire-hq-integrations-api-openapi.yml",
+    "campfire-hq-revenue-recognition-api-openapi.yml",
+    "campfire-hq-settings-api-openapi.yml"
+  ],
+  "outputs": [
+    "campfire-hq-accounts-payable-api-openapi.yml",
+    "campfire-hq-accounts-receivable-api-openapi.yml",
+    "campfire-hq-bank-reconciliation-api-openapi.yml",
+    "campfire-hq-cash-management-api-openapi.yml",
+    "campfire-hq-coa-api-openapi.yml",
+    "campfire-hq-company-objects-api-openapi.yml",
+    "campfire-hq-core-accounting-api-openapi.yml",
+    "campfire-hq-custom-fields-api-openapi.yml",
+    "campfire-hq-financial-statements-api-openapi.yml",
+    "campfire-hq-integrations-api-openapi.yml",
+    "campfire-hq-revenue-recognition-api-openapi.yml",
+    "campfire-hq-settings-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

@@ -1,0 +1,108 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Campfire Developer APIs Accounts Payable Core Accounting API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Core Accounting",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Budgets",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/coa/api/budgets"
+          },
+          "docs": "List Budgets"
+        },
+        {
+          "info": {
+            "name": "Create Budget",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.meetcampfire.com/coa/api/budgets",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Budget"
+        },
+        {
+          "info": {
+            "name": "Retrieve Budget",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/coa/api/budgets/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "id"
+              }
+            ]
+          },
+          "docs": "Retrieve Budget"
+        },
+        {
+          "info": {
+            "name": "List Fixed Assets",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/coa/api/fixed-asset"
+          },
+          "docs": "List Fixed Assets"
+        },
+        {
+          "info": {
+            "name": "Create Fixed Asset",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.meetcampfire.com/coa/api/fixed-asset",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Fixed Asset"
+        },
+        {
+          "info": {
+            "name": "List Chart Transactions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/coa/api/transaction"
+          },
+          "docs": "List Chart Transactions"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

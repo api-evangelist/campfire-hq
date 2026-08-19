@@ -1,0 +1,63 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Campfire Developer APIs Accounts Payable Settings API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Settings",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Files",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/ca/api/file"
+          },
+          "docs": "List Files"
+        },
+        {
+          "info": {
+            "name": "List Chart Entities",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/coa/api/entity"
+          },
+          "docs": "List Chart Entities"
+        },
+        {
+          "info": {
+            "name": "Create Chart Entity",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.meetcampfire.com/coa/api/entity",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Chart Entity"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

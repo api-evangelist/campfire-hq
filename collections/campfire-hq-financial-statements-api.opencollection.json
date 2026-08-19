@@ -1,0 +1,92 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Campfire Developer APIs Accounts Payable Financial Statements API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Financial Statements",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Cash Basis Income Statement",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/ca/api/cash-basis"
+          },
+          "docs": "Get Cash Basis Income Statement"
+        },
+        {
+          "info": {
+            "name": "Get Balance Sheet",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/ca/api/get_balance_sheet"
+          },
+          "docs": "Get Balance Sheet"
+        },
+        {
+          "info": {
+            "name": "Get Cash Flow",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/ca/api/get_cash_flow"
+          },
+          "docs": "Get Cash Flow"
+        },
+        {
+          "info": {
+            "name": "Get Income Statement",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/ca/api/get_income_statement"
+          },
+          "docs": "Get Income Statement"
+        },
+        {
+          "info": {
+            "name": "Get Trial Balance",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/ca/api/get_trial_balance"
+          },
+          "docs": "Get Trial Balance"
+        },
+        {
+          "info": {
+            "name": "Get General Ledger",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/coa/api/general-ledger"
+          },
+          "docs": "Get General Ledger"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,153 @@
+{
+  "item": [
+    {
+      "id": "6997190c-b835-41f4-9323-9b482edd9ebd",
+      "name": "Custom Fields",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "6d380e6a-0b6e-476a-9e02-b6c3ef131dfc",
+          "name": "Reorder Custom Fields",
+          "request": {
+            "name": "Reorder Custom Fields",
+            "description": {},
+            "url": {
+              "path": [
+                "ca",
+                "api",
+                "v1",
+                "custom-fields",
+                "reorder"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "<object>",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "7a531582-644b-4952-ab74-a4b8537cca8e",
+              "name": "Successful response",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "ca",
+                    "api",
+                    "v1",
+                    "custom-fields",
+                    "reorder"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "<object>",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.meetcampfire.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "4106e09c-6d8b-4734-9a75-54c1442376e1",
+    "name": "Campfire Developer APIs Accounts Payable Custom Fields API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Campfire's developer APIs offer granular, programmatic access to Campfire's AI-native ERP: core accounting and the general ledger, chart of accounts and company objects, accounts payable and receivable, bank reconciliation, cash management, financial statements, revenue recognition, settings, and integrations/webhooks. This document is a representative, API-Evangelist-curated subset modeled directly from Campfire's published OpenAPI at https://api.meetcampfire.com/api/schema (186 documented paths). Request and response schemas are simplified to generic objects here; consult the upstream schema for full field-level detail.\n\nContact Support:\n Name: Campfire",
+      "type": "text/plain"
+    }
+  }
+}

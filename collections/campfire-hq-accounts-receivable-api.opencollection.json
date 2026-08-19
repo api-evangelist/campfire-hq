@@ -1,0 +1,104 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Campfire Developer APIs Accounts Payable Accounts Receivable API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Accounts Receivable",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Credit Memos",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/coa/api/v1/credit-memo"
+          },
+          "docs": "List Credit Memos"
+        },
+        {
+          "info": {
+            "name": "Create Credit Memo",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.meetcampfire.com/coa/api/v1/credit-memo",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Credit Memo"
+        },
+        {
+          "info": {
+            "name": "List Invoices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/coa/api/v1/invoice/"
+          },
+          "docs": "List Invoices"
+        },
+        {
+          "info": {
+            "name": "Create Invoice",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.meetcampfire.com/coa/api/v1/invoice/",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Invoice"
+        },
+        {
+          "info": {
+            "name": "List Contract Products",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/rr/api/v1/product"
+          },
+          "docs": "List Contract Products"
+        },
+        {
+          "info": {
+            "name": "Create Contract Product",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.meetcampfire.com/rr/api/v1/product",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Contract Product"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,78 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Campfire Developer APIs Accounts Payable API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Accounts Payable",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Bill Drafts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/coa/api/v1/bill-draft"
+          },
+          "docs": "List Bill Drafts"
+        },
+        {
+          "info": {
+            "name": "Create Bill Draft",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.meetcampfire.com/coa/api/v1/bill-draft",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Bill Draft"
+        },
+        {
+          "info": {
+            "name": "List Accounting Bills",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/coa/api/v1/bill/"
+          },
+          "docs": "List Accounting Bills"
+        },
+        {
+          "info": {
+            "name": "Create Accounting Bill",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.meetcampfire.com/coa/api/v1/bill/",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Accounting Bill"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,89 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Campfire Developer APIs Accounts Payable Revenue Recognition API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Revenue Recognition",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Contracts",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/rr/api/v1/contracts"
+          },
+          "docs": "List Contracts"
+        },
+        {
+          "info": {
+            "name": "Create Contract",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.meetcampfire.com/rr/api/v1/contracts",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Contract"
+        },
+        {
+          "info": {
+            "name": "List Contract Customers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/rr/api/v1/customers"
+          },
+          "docs": "List Contract Customers"
+        },
+        {
+          "info": {
+            "name": "List Contract Products",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.meetcampfire.com/rr/api/v1/product"
+          },
+          "docs": "List Contract Products"
+        },
+        {
+          "info": {
+            "name": "Create Contract Product",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.meetcampfire.com/rr/api/v1/product",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Contract Product"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

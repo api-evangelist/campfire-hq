@@ -27,6 +27,13 @@ tags:
 - ERP
 - General Ledger
 - Revenue Recognition
+- Fintech
+- Artificial Intelligence
+tags_raw:
+- Accounting
+- ERP
+- General Ledger
+- Revenue Recognition
 - FinTech
 - AI
 created: '2026-07-01'
@@ -219,6 +226,8 @@ apis:
   humanURL: https://docs.campfire.ai/
   baseURL: https://api.meetcampfire.com
   tags:
+  - Integration
+  tags_raw:
   - Integrations
   properties:
   - type: OpenAPI

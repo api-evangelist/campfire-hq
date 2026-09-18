@@ -1,36 +1,42 @@
 {
   "provider": "campfire-hq",
   "sources": [
-    "campfire-hq-accounts-payable-api-openapi.yml",
-    "campfire-hq-accounts-receivable-api-openapi.yml",
-    "campfire-hq-bank-reconciliation-api-openapi.yml",
-    "campfire-hq-cash-management-api-openapi.yml",
-    "campfire-hq-coa-api-openapi.yml",
-    "campfire-hq-company-objects-api-openapi.yml",
-    "campfire-hq-core-accounting-api-openapi.yml",
-    "campfire-hq-custom-fields-api-openapi.yml",
-    "campfire-hq-financial-statements-api-openapi.yml",
-    "campfire-hq-integrations-api-openapi.yml",
-    "campfire-hq-revenue-recognition-api-openapi.yml",
-    "campfire-hq-settings-api-openapi.yml"
+    "_original/campfire-hq-openapi.yml"
   ],
   "outputs": [
     "campfire-hq-accounts-payable-api-openapi.yml",
     "campfire-hq-accounts-receivable-api-openapi.yml",
     "campfire-hq-bank-reconciliation-api-openapi.yml",
     "campfire-hq-cash-management-api-openapi.yml",
-    "campfire-hq-coa-api-openapi.yml",
     "campfire-hq-company-objects-api-openapi.yml",
     "campfire-hq-core-accounting-api-openapi.yml",
     "campfire-hq-custom-fields-api-openapi.yml",
     "campfire-hq-financial-statements-api-openapi.yml",
     "campfire-hq-integrations-api-openapi.yml",
     "campfire-hq-revenue-recognition-api-openapi.yml",
-    "campfire-hq-settings-api-openapi.yml"
+    "campfire-hq-settings-api-openapi.yml",
+    "campfire-hq-coa-api-openapi.yml"
   ],
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "campfire-hq-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "campfire-hq-accounts-payable-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-accounts-receivable-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-bank-reconciliation-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-cash-management-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-coa-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-company-objects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-core-accounting-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-custom-fields-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-financial-statements-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-integrations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-revenue-recognition-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "campfire-hq-settings-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
